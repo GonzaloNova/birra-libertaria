@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    list-style-type: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color:rgb(82, 86, 90);
+}
+
+.separate{
+    width: 100%; 
+    height:5px ;
+    margin: 15px auto;
+    background: whitesmoke;
+    box-shadow: inset;
+}
+
+.header { grid-area: header;
+    background-color: rgb(94, 92, 4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Imagen destacada fija, mail h1 y h2 */
+.imagenDestacada-index {
+    background-image: url(../img/amigos-tomando.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+.imagenDestacada-productos {
+    background-image: url(../img/sabores-originales.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+.imagenDestacada-nosotros {
+    background-image: url(../img/visita-fabrica.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+.imagenDestacada-blog {
+    background-image: url(../img/cerveza-vikinga.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+/* Tarjetas acceso a secciones en Index*/
+.seccionTarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(../img/baner-burbuja.jpg);
+    padding-bottom: 100px;
+    padding-top: 50px;
+    
+}
+.tarjeta {
+    width: 450px;
+    margin: 20px;
+    padding: 5px 15px 15px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.4) ;
+    box-shadow: 5px 10px 10px;
+    border-radius: 5px;
+    border-left:#6c975e59 solid 3px;
+    border-top:#6c975e38  solid 5px;
+    backdrop-filter: blur(5px);  
+    color: rgb(14, 51, 9); 
+}
+
+.tarjeta a:hover img{
+    box-shadow:none;
+    transform: scale(.98);
+}
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    color: rgb(14, 51, 9);
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px;
+}
+.tarjeta .iconWp {
+    width: 50px;
+    transform: none; 
+    box-shadow: none;
+}
+
+.tarjeta:hover{
+    transform: translateY(-8px);
+    box-shadow: 1px 1px 30px;
+}
+.tarjeta h2{
+    font-size: 35px;
+    color: rgb(88, 88, 7);
+    padding-top: 40px;
+}
+
+.tarjeta h3{
+    font-size: 28px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+/* Mapa */
+iframe{
+    width: 600px;
+    height:450px;
+    padding: 10px;
+    margin: auto;
+    }
+
+/* Formulario de Contacto */
+.contacto{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.formContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    margin: 3px;
+    background-image: url(../img/baner-burbuja.jpg);
+    box-shadow: 7px 7px 30px #000;
+}
+.formContacto input{
+padding: 8px;
+color: rgb(68, 68, 13);
+margin-top: 15px;
+margin-left: 10px;
+margin-right: 15px;
+border-radius: 5px;
+background-color:#bdc91da1;
+}
+.formContacto textarea{
+    padding: 5px;
+    font-family: 'roboto' sans-serif;
+    color: rgb(68, 68, 13);
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color:#bdc91da1;
+}
+.formContacto a {
+    text-decoration: none;
+    text-transform:uppercase;
+    color: black;
+}
+.formContacto p {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.formContacto .boton{
+    width: 70%;
+    padding: 8px;
+    margin: auto;
+    background-color: #555a11;
+    color: white;
+    border: none;
+    font-size: 16px;
+    box-shadow: 7px 7px 30px #000;
+}
+.formContacto .boton:hover{
+    box-shadow: none;
+}
+.contacto iframe{
+    width: 100%;
+}
+
+/* Estilo entradas del blog: general, títulos, parrafo, imágenes, indice*/
+
+section {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 7px 7px 30px #000;
+}
+
+h1{
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 28px;
+    position:sticky;
+    color: #555a11;
+}
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+img {
+    display: block;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.portadaBlog {grid-area: portada;
+    height: 100%;
+    background-color: rgb(219, 206, 231);
+    display: flexbox;
+    align-items:center;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
+    box-shadow: unset;
+    border-radius:unset ;
+}
+
+.portadaBlog img{width: 100%;}
+
+.main{grid-area: main;
+    background-color: rgb(219, 206, 231);
+    margin: 10px 4px 4px;
+    padding: 10px;
+    text-align: center;
+}
+.main h3{text-align: left; padding-top: 20px;}
+.main p{text-align: justify;padding: 10px;} 
+.main img {height: 250px;
+}
+/* Menu pie de pagina */
+.footer {grid-area: footer;
+    background-color: rgb(39, 39, 24);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img {
+    width: 50px;
+}
+.footer1 {
+    display:flex ;
+    align-items: center;
+}
+
+.footer2 {
+    display:flex ; 
+    align-items: center;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: rgb(171, 173, 28);
+}
+
+/* Grid Ppal Paginas Blog y Help */
+.fatherGrid{
+    display: grid;
+    grid-template: 
+    "header header" auto
+    "navbar navbar" auto
+    "portada sidebar" auto
+    "main   sidebar" auto
+    "footer footer" 50px /
+    4fr 1fr    ;
+    position: relative;
+}
+.sidebar{grid-area: sidebar;
+    background-color: rgb(219, 206, 231);
+    padding-top: 20px;
+    padding-left: 15px ;
+    text-align:left;
+    font-size: small;
+    line-height: 2;
+    
+}
+.sidebar h2{
+    padding: 10px 10px 30px;
+}
+.sidebar a{color:rgb(75, 75, 13); 
+
+}
+.sidebar a:hover{ font-weight:  bold; } 
+
+/* Navbar */
+.header {
+    width: 100%;
+    height: 100px;
+}
+.header img{ 
+    width: 300px;
+}
+.header input {
+    padding: 5px;
+    margin-right: 10px;
+}
+.navbar{grid-area: navbar;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: rgb(111, 112, 22);
+    padding: 10px ;
+    box-shadow: 01px 3px 30px 1px;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.navbar > ul > li {height: 100%;
+position: relative;
+}
+
+.navbar > ul > li > a {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    color: aliceblue;
+    padding: 15px;
+}
+
+.navbar > ul > li > a:hover {
+    height:100%;
+    width: 100%;
+    color: rgb(150, 16, 16);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px 3px;
+    background-color: blanchedalmond;
+}
+#selected{    
+    color: rgb(150, 16, 16);
+    font-weight: 700;
+    box-shadow: 0px 0px 0px 1px;
+    background-color: blanchedalmond;}
+/* Submenu */
+nav ul li ul{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 25px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px;
+    transition: all 300ms ease;
+    z-index: 10;
+}
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: .9;
+    top: 45px
+}
+nav ul li ul:before{
+content: "";
+width: 0px;
+height: 0px;
+border-left: 12px solid transparent;
+border-right: 12px solid transparent;
+border-bottom: 12px solid blanchedalmond;
+position: absolute;
+top:-12px;
+left: 20px;
+}
+nav ul li ul li a{
+    display: block;
+    color: rgb(113, 124, 9);
+    background-color: blanchedalmond;
+    padding: 15px 10px 10px;
+    font-size: small;
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    color: rgb(122, 23, 23);
+    padding: 6px;
+    *transition: all 300ms ease;
+    transform: scale(1.08);
+    box-shadow: 3px 3px 8px 3px;
+    background-color:rgb(113, 124, 9);
+}
