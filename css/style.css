@@ -698,5 +698,5 @@ header img{animation: latido 4s linear; }
     25%{transform: scale(.98);}
     50%{transform: scale(1.1);}
     75%{transform: scale(.98);}
-  100%{transform: scale(1.03)}
+  100%{transform: scale(1.03);}
   }
