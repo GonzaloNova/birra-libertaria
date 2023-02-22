@@ -690,3 +690,13 @@ nav ul li ul li a:hover {
         font-size: small;
     }
 }
+
+header img{animation: latido 4s linear; }
+
+@keyframes latido{
+    0% {transform: scale(1.1);}
+    25%{transform: scale(.98);}
+    50%{transform: scale(1.1);}
+    75%{transform: scale(.98);}
+  100%{transform: scale(1.03)}
+  }
