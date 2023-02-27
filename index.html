@@ -8,80 +8,111 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Birra Craft Libertaria | Home</title>
+    <title>Birra Liber|Home</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html"><img src="./img/logo-leon-nombre.png" alt="Logo León Birra Craft Libertaria"></a>
-        <input type="search" name="buscar" id="buscar" placeholder="escribe aquí para buscar dentro del sitio">
-    </header>
-
-    <nav class="navbar fixed-top sticky-top">
-        <input type="checkbox" id="checkMenu">
-        <label for="checkMenu">
-            <i class="fa-solid fa-bars iHambuerguesa"></i>
-        </label>
-        <ul>
-            <li><a href="index.html" id="selected">Home</a></li>
-            <li><a href="./pages/productos.html">Tus Productos</a>
-                <ul>
-                    <li><a href="#">Submenu1</a></li>
-                    <li><a href="#">Submenu2</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../img/logo-leon-titulo.png" style="width: 45px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarDark">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/blog.html">Blog del Sitio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/help.html">Preguntas Frecuentes</a>
+                    </li>
                 </ul>
-            </li>
-            <li><a href="./pages/nosotros.html">Nuestra Empresa</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-            <li><a href="./pages/help.html">FAQ</a></li>
-        </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
     </nav>
-
-    <div class="imagenDestacada-index"></div>
-    <section>
-        <h1>Tu Birra Libertaria, única cerveza craft 0.0</h1>
-        <h2>Disfruta sin límites del sabor mas refrescante con tus amigos</h2>
-    </section>
-
-    <div class="seccionTarjetas">
-        <div class="tarjeta">
-            <a href="./pages/productos.html"><img src="./img/craft-beer.jpg" alt="Foto de cerveza artesanal">
-                <h2>Ventas</h2>
-                <h3>Aquí elige y encarga tu cerveza craft</h3>
+    <main class="container-fluid img-fluid text-center">
+        <div class="content-all img-fluid">
+            <div class="content-carrousel img-fluid my-carousel">
+                <figure><a href="#"><img src="../img/banner2.jpg">
+                        <div class="caption">Productos</div>
+                    </a></figure>
+                <figure><a href="./pages/nosotros.html"><img src="../img/maestro-cerbecero.jpg">
+                        <div class="caption">Nosotros</div>
+                    </a></figure>
+                <figure><a href="./pages/help.html"><img src="../img/baner-burbuja.jpg">
+                        <div class="caption">F.A.Q Terminos Legales</div>
+                    </a></figure>
+                <figure><a href="./pages/blog.html"><img src="../img/monjes-cerveceros.jpg">
+                        <div class="caption">Blog del Sitio</div>
+                    </a></figure>
+                <figure><a href="./pages/productos.html"><img src="../img/sabores-originales.jpg">
+                        <div class="caption">Productos</div>
+                    </a></figure>
+                <figure><a href="./pages/productos.html"><img src="../img/amigos-festejando.jpg">
+                        <div class="caption">Productos</div>
+                    </a></figure>
+                <figure><a href="./pages/productos.html"><img src="../img/amigos-tomando.jpg">
+                        <div class="caption">Productos</div>
+                    </a></figure>
+                <figure><a href="./pages/blog.html"><img src="../img/beer-retro-woman.jpg">
+                        <div class="caption">Nuestro Blog</div>
+                    </a></figure>
+                <figure><a href="./pages/productos.html"><img src="../img/amigos-tomando.jpg">
+                        <div class="caption">Productos</div>
+                    </a></figure>
+                <figure><a href="./pages/blog.html"><img src="../img/cerveza-vikinga.jpg">
+                        <div class="caption">Nuestro Blog</div>
+                    </a></figure>
+            </div>
+        </div>
+        <div class="leyenda text-center">
+            <h2 class="fs-1 fw-bolder">Un Mundo Craft</h2>
+            <a href="./pages/productos.html"><button type="button" class="btn btn-lg btn-outline-danger">Descubre Aquí</button>
             </a>
-        </div>
-        <div class="tarjeta">
-            <a href="./pages/nosotros.html"><img src="./img/maestro-cerbecero.jpg" alt="Maestro cervecero">
-                <h2>Nuestra Fábrica</h2>
-                <h3>Nuestra historia y metodos de elaboración</h3>
-            </a>
-        </div>
-        <div class="tarjeta">
-            <a href="./pages/blog.html"><img src="./img/beer-retro-woman.jpg"
-                    alt="Foto retro modelo posando con cerveza">
-                <h2>Blog</h2>
-                <h3>Historia de la cerveza y algo más ...</h3>
-            </a>
-        </div>
-    </div>
+            </div>
 
-    <footer class="footer">
-        <div class="footer1">
-            <a href="#top"><img src="./img/icons-mano.png" alt="icono de mano arriba"></a>
-            <a href="./pages/help.html#terminos">| Términos y Condiciones </a>
-            <a href="./pages/help.html#privacidad">| P. Privacidad </a>
-            <a href="./pages/help.html#cookies">| P. Cookies |</a>
-        </div>
-        <div class="footer2">
-            <a href="https://es-la.facebook.com/" target="_blank"><img class="iconRedes" src="./img/icons-facebook.png"
-                    alt="icono retro de facebook"></a>
-            <a href="https://api.whatsapp.com/send?phone=+59894957236&text=Hola, Nececito mas informacion!"
-                target="_blank"><img class="iconRedes" src="./img/icons-whatsapp.png" alt="icono retro de WhatsApp"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="iconRedes" src="./img/icons-insta.png"
-                    alt="icono retro de instagram"></a>
-            <a href="https://www.youtube.com/?hl=ES" target="_blank"><img class="iconRedes"
-                    src="./img/icons-youtube.png" alt="icono retro de youtube"></a>
+    </main>
+
+    <footer class="bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-center">
+                    <a href="./pages/help.html#terminos">Términos legales</a> | <a href="./pages/help.html#cookies">Política de cookies</a>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=+59894957236&text=Hola, Nececito mas informacion!"
+                        target="_blank"><i class="fab fa-whatsapp fs-4"></i></a>
+                    <a href="#top"><i class="fas fa-arrow-up fs-4"></i></a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p class="text-secondary">&copy; Gonzalo E. Nova - Todos los derechos reservados</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/f9508e5dcf.js" crossorigin="anonymous"></script>
 </body>
 

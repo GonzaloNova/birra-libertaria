@@ -1,0 +1,28 @@
+@import "variables";
+@import "mediaq";
+@import "tarjetas";
+@import "footer";
+@import "carrusel";
+
+
+.imagenDestacada-productos {
+    background-image: url(../img/sabores-originales.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+.imagenDestacada-nosotros {
+    background-image: url(../img/visita-fabrica.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+.imagenDestacada-blog {
+    background-image: url(../img/cerveza-vikinga.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}

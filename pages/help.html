@@ -7,66 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Birra Craft Libertaria | FAQ y Legales</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Birra Liber|Home</title>
 </head>
 
-<body class="fatherGrid">
-    <header class="header">
-        <a href="../index.html"><img src="../img/logo-leon-nombre.png" alt="Logo León Birra Craft Libertaria"></a>
-        <input type="search" name="buscar" id="buscar" placeholder="escribe aquí para buscar dentro del sitio">
-    </header>
-
-    <nav class="navbar fixed-top sticky-top">
-        <input type="checkbox" id="checkMenu">
-        <label for="checkMenu">
-            <i class="fa-solid fa-bars iHambuerguesa"></i>
-        </label>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./productos.html">Tus Productos</a>
-                <ul>
-                    <li><a href="#">Submenu1</a></li>
-                    <li><a href="#">Submenu2</a></li>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo-leon-titulo.png" style="width: 45px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
+                aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarDark">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog del Sitio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Preguntas Frecuentes</a>
+                    </li>
                 </ul>
-            </li>
-            <li><a href="./nosotros.html">Nuestra Empresa</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./help.html" id="selected">FAQ</a></li>
-        </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
     </nav>
-    <aside class="sidebar">
-        <section class="sidebar-content">
-            <h2>Indice:</h2>
-            <div class="separate"></div>
-            <ul>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
-                <li><a href="#terminos">Términos y Condiciones</a></li>
-                <li><a href="#privacidad">Política de privacidad de la información</a></li>
-                <li><a href="#cookies">Políticas de Cookies</a></li>
-            </ul>
-        </section>
-    </aside>
-    <main class="main">
+
+
+    <main class="main container">
         <section>
             <h1>Preguntas Frecuentes (F.A.Q.) y Términos Legales</h1>
         </section>
-
+        <aside class="sidebar">
+            <section class="sidebar-content">
+                <h2>Indice:</h2>
+                <div class="separate"></div>
+                <ul>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    <li><a href="#terminos">Términos y Condiciones</a></li>
+                    <li><a href="#privacidad">Política de privacidad de la información</a></li>
+                    <li><a href="#cookies">Políticas de Cookies</a></li>
+                </ul>
+            </section>
+        </aside>
         <section id="faq">
             <div class="accordion accordion-flush">
-                <h2>Preguntas Frecuentes (FAQ)</h2>
+                <h2>Preguntas Frecuentes (F.A.Q)</h2>
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Pregunta Frecuente #1
+                            <p class="fw-bold text-decoration-underline">¿Cómo puedo crear una cuenta en su sitio web?
+                            </p>
                         </button>
                     </h3>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Para crear una cuenta en nuestro sitio web, simplemente haga clic en el botón
+                                "Registrarse" ubicado en la parte superior de la página. Luego, siga las instrucciones
+                                para proporcionar la información requerida, como su nombre, dirección de correo
+                                electrónico y contraseña. Una vez que haya completado el registro, podrá acceder a su
+                                cuenta y comenzar a utilizar nuestros servicios.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -74,14 +89,17 @@
                     <h3 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Pregunta Frecuente #2
+                            <p class="fw-bold text-decoration-underline">¿Cuáles son los métodos de pago aceptados?</p>
                         </button>
                     </h3>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Aceptamos varias formas de pago, incluyendo tarjetas de crédito y débito, PayPal y
+                                transferencias bancarias. Para obtener más información sobre los métodos de pago
+                                aceptados y cómo agregarlos a su cuenta, visite nuestra sección de "Pagos" en el sitio
+                                web.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -90,14 +108,19 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false"
                             aria-controls="flush-collapseThree">
-                            Pregunta Frecuente #3
+                            <p class="fw-bold text-decoration-underline">¿Cómo puedo cancelar mi suscripción?</p>
                         </button>
                     </h3>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Para cancelar su suscripción a nuestros servicios, simplemente inicie sesión en su cuenta
+                                y vaya a la sección "Configuración". Luego, seleccione la opción "Cancelar suscripción"
+                                y siga las instrucciones. Tenga en cuenta que la cancelación de su suscripción no
+                                afectará los cargos que ya haya realizado y que no podremos proporcionar reembolsos por
+                                servicios ya utilizados. Si tiene problemas para cancelar su suscripción, póngase en
+                                contacto con nuestro servicio de atención al cliente para obtener ayuda adicional.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,19 +129,26 @@
         <section id="privacidad">
             <div class="accordion accordion-flush">
                 <h2>Política de Privacidad de la Información</h2>
+                <p>En Birra Libertaria srl, valoramos su privacidad y nos comprometemos a proteger sus datos personales.
+                    Esta política de privacidad de la información describe cómo recopilamos, utilizamos y protegemos la
+                    información que obtenemos de usted a través de nuestro sitio web, aplicaciones móviles y otros
+                    canales de comunicación.</p>
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="flush-headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFour" aria-expanded="false"
                             aria-controls="flush-collapseFour">
-                            Politica de Privacidad #1
+                            <p class="fw-bold text-decoration-underline">Recopilación de información</p>
                         </button>
                     </h3>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Recopilamos información personal que usted nos proporciona directamente, como su nombre,
+                                dirección de correo electrónico, número de teléfono y otra información de contacto.
+                                También podemos recopilar información sobre su uso de nuestros servicios, incluyendo sus
+                                interacciones con nuestro sitio web, productos y servicios.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -127,14 +157,17 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseFive" aria-expanded="false"
                             aria-controls="flush-collapseFive">
-                            Politica de Privacidad #2
+                            <p class="fw-bold text-decoration-underline">Uso de la información</p>
                         </button>
                     </h3>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Utilizamos la información que recopilamos para proporcionarle nuestros servicios,
+                                responder a sus preguntas y solicitudes, mejorar nuestro sitio web y servicios, y
+                                personalizar su experiencia de usuario. También podemos utilizar su información para
+                                fines de marketing y publicidad, siempre y cuando contemos con su consentimiento.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -142,14 +175,67 @@
                     <h3 class="accordion-header" id="flush-headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                            Politica de Privacidad #3
+                            <p class="fw-bold text-decoration-underline">Divulgación de información</p>
                         </button>
                     </h3>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Compartiremos su información personal con terceros, excepto en los siguientes casos:</p>
+                            <p>Cuando contemos con su consentimiento para hacerlo.</p>
+                            <p>Cuando sea necesario para proporcionarle nuestros servicios.</p>
+                            <p>Cuando estemos obligados por ley a divulgar su información.</p>
+                            <p>Cuando tengamos un interés legítimo en hacerlo, como en caso de detectar o prevenir
+                                fraudes o proteger nuestros derechos legales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="flush-headingSixOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSixOne" aria-expanded="false"
+                            aria-controls="flush-collapseSixOne">
+                            <p class="fw-bold text-decoration-underline">Seguridad de la información</p>
+                        </button>
+                    </h3>
+                    <div id="flush-collapseSixOne" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSixOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Tomamos medidas de seguridad razonables para proteger su información personal contra el
+                                acceso no autorizado, la modificación, la divulgación o la destrucción. Esto incluye la
+                                utilización de herramientas de encriptación y la limitación del acceso a su información
+                                por parte de nuestro personal y terceros.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="flush-headingSixTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSixTwo" aria-expanded="false"
+                            aria-controls="flush-collapseSixTwo">
+                            <p class="fw-bold text-decoration-underline">Sus derechos de privacidad</p>
+                        </button>
+                    </h3>
+                    <div id="flush-collapseSixTwo" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSixTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Usted tiene derecho a acceder, corregir, eliminar y objetar el procesamiento de su
+                                información personal. También puede ejercer su derecho a retirar su consentimiento para
+                                el procesamiento de su información en cualquier momento. Para hacerlo, por favor
+                                contáctenos a través de los medios indicados al final de esta política.</p>
+                            <p class="fw-bold">Cambios a esta política</p>
+                            <p>Nos reservamos el derecho de actualizar o modificar esta política de privacidad de la
+                                información en cualquier momento. Le recomendamos revisar esta política periódicamente
+                                para estar al tanto de cualquier cambio.</p>
+                            <p class="fw-bold">Contacto</p>
+                            <p>Si tiene preguntas o comentarios sobre esta política de privacidad de la información, por
+                                favor contáctenos a través de los siguientes medios:</p>
+                            <p class="fst-italic">Birra Libertaria srl</p>
+                            <p class="fst-italic">info@birralibertaria.com</p>
+                            <p class="fst-italic">CP 15.900, Progreso, ROU</p>
+                            <p class="fst-italic">+598 94957236</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,20 +243,26 @@
 
         <section id="terminos">
             <div class="accordion accordion-flush">
-                <h2>Términos y Condiciones</h2>
+                <h2>Términos Legales</h2>
+                <p>Estos términos y condiciones establecen las normas y condiciones de uso del sitio web
+                    www.birralibertaria.com (en adelante, el "Sitio web"), propiedad de ExeShopp.com. Al acceder y
+                    utilizar este Sitio web, acepta los siguientes términos y condiciones de uso:</p>
                 <div class="accordion-item">
                     <h3 class="accordion-header" id="flush-headingSeven">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseSeven" aria-expanded="false"
                             aria-controls="flush-collapseSeven">
-                            Términos y Condiciones #1
+                            <p class="fw-bold text-decoration-underline">1. Propiedad intelectual</p>
                         </button>
                     </h3>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Todo el contenido incluido en este Sitio web, como textos, gráficos, logotipos, iconos de
+                                botones, imágenes, clips de audio, descargas digitales, compilaciones de datos y
+                                software, es propiedad de ExeShopp.com o de sus proveedores de contenido y está
+                                protegido por las leyes de propiedad intelectual.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -179,14 +271,16 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseEigth" aria-expanded="false"
                             aria-controls="flush-collapseEigth">
-                            Términos y Condiciones #2
+                            <p class="fw-bold text-decoration-underline">2. Limitación de responsabilidad</p>
                         </button>
                     </h3>
                     <div id="flush-collapseEigth" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingEigth" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>El contenido de este Sitio web se proporciona "tal cual" y sin garantías de ningún tipo,
+                                ya sean expresas o implícitas. ExeShopp.com no garantiza que el contenido de este Sitio
+                                web sea exacto, completo, fiable, actualizado o sin errores.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -195,14 +289,17 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseNine" aria-expanded="false"
                             aria-controls="flush-collapseNine">
-                            Términos y Condiciones #3
+                            <p class="fw-bold text-decoration-underline">3. Enlaces a sitios web de terceros</p>
                         </button>
                     </h3>
                     <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Este Sitio web puede incluir enlaces a otros sitios web de terceros. Estos enlaces se
+                                proporcionan únicamente para su conveniencia y no implican que ExeShopp.com apruebe o
+                                tenga ninguna responsabilidad sobre el contenido o las políticas de privacidad de dichos
+                                sitios web de terceros.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,18 +308,26 @@
         <section id="cookies">
             <div class="accordion accordion-flush">
                 <h2>Política de Cookies</h2>
+                <label for="cookies">Acepta todas las Cookies</label>
+                <input type="radio" name="cookies" id="cookies" value="acepta">
+                <label for="cookies">Rechaza todas las Cookies</label>
+                <input type="radio" name="cookies" id="cookies" value="rechaza">
+                <button>Acepto Terminos Legales y política de Cookies</button>
+
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTen">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                            Política de Cookies #1
+                            <p class="fw-bold text-decoration-underline">¿Qué son las cookies?</p>
                         </button>
                     </h2>
                     <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando
+                                visita un sitio web. Estas cookies permiten que el sitio web recuerde sus preferencias y
+                                configuraciones, lo que le brinda una experiencia de usuario más personalizada.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -231,14 +336,17 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseEleven" aria-expanded="false"
                             aria-controls="flush-collapseEleven">
-                            Política de Cookies #2
+                            <p class="fw-bold text-decoration-underline">¿Cómo usamos las cookies?</p>
                         </button>
                     </h2>
                     <div id="flush-collapseEleven" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>El sitio www.birralibertaria.com propiedad de ExeShopp.com utiliza cookies para mejorar
+                                la experiencia del usuario en nuestro sitio web. Algunas de las cookies que utilizamos
+                                son esenciales para el funcionamiento del sitio web, mientras que otras nos ayudan a
+                                analizar cómo se utiliza el sitio y a mejorar su rendimiento.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -247,14 +355,17 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwelve" aria-expanded="false"
                             aria-controls="flush-collapseTwelve">
-                            Política de Cookies #3
+                            <p class="fw-bold text-decoration-underline">¿Cómo controlar las cookies?</p>
                         </button>
                     </h2>
                     <div id="flush-collapseTwelve" class="accordion-collapse collapse"
                         aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the class. This is the second item's accordion body. Let's imagine this being
-                            filled with some actual content.</div>
+                        <div class="accordion-body">
+                            <p>Puede controlar las cookies en su navegador web. La mayoría de los navegadores le
+                                permiten controlar las cookies a través de su configuración de privacidad. Tenga en
+                                cuenta que desactivar las cookies puede afectar la funcionalidad de algunos sitios web.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -262,25 +373,29 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer1">
-            <a href="#top"><img src="../img/icons-mano.png" alt="icono de mano arriba"></a>
-            <a href="./help.html#terminos">| Términos y Condiciones </a>
-            <a href="./help.html#privacidad">| P. Privacidad </a>
-            <a href="./help.html#cookies">| P. Cookies |</a>
-        </div>
-        <div class="footer2">
-            <a href="https://es-la.facebook.com/" target="_blank"><img class="iconRedes" src="../img/icons-facebook.png"
-                    alt="icono retro de facebook"></a>
-            <a href="https://api.whatsapp.com/send?phone=+59894957236&text=Hola, Nececito mas informacion!"
-                target="_blank"><img class="iconRedes" src="../img/icons-whatsapp.png"
-                    alt="icono retro de WhatsApp"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="iconRedes" src="../img/icons-insta.png"
-                    alt="icono retro de instagram"></a>
-            <a href="https://www.youtube.com/?hl=ES" target="_blank"><img class="iconRedes"
-                    src="../img/icons-youtube.png" alt="icono retro de youtube"></a>
+    <footer class="bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-left text-center">
+                    <a href="help.html#terminos">Términos legales</a> | <a href="help.html#cookies">Política de cookies</a>
+                </div>
+                <div class="col-md-6 text-md-right text-center">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=+59894957236&text=Hola, Nececito mas informacion!"
+                        target="_blank"><i class="fab fa-whatsapp fs-4"></i></a>
+                    <a href="#top"><i class="fas fa-arrow-up fs-4"></i></a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p class="text-secondary">&copy; Gonzalo E. Nova - Todos los derechos reservados</p>
+                </div>
+            </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
