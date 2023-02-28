@@ -1,5 +1,3 @@
-
-
 /* Tarjetas acceso a secciones en Index*/
 /* Mapa */
 /* Formulario de Contacto */
@@ -11,6 +9,7 @@
 	padding-bottom: 100px;
 	padding-top: 50px;
 }
+
 .tarjeta {
 	width: 450px;
 	margin: 20px;
@@ -23,8 +22,10 @@
 	border-top: #6c975e38 solid 5px;
 	backdrop-filter: blur(5px);
 	color: $color_1;
+
 	a {
 		text-decoration-line: none;
+
 		&:hover {
 			img {
 				box-shadow: none;
@@ -32,6 +33,7 @@
 			}
 		}
 	}
+
 	img {
 		width: 100%;
 		height: auto;
@@ -39,33 +41,39 @@
 		border-radius: 10px;
 		box-shadow: 5px 5px 30px;
 	}
+
 	.iconWp {
 		width: 50px;
 		transform: none;
 		box-shadow: none;
 	}
+
 	&:hover {
 		transform: translateY(-8px);
 		box-shadow: 1px 1px 30px;
 	}
+
 	h2 {
-		font-size: 35px;
+		font-size: 30px;
 		color: $color_2;
-		padding-top: 40px;
+		padding-top: 30px;
 	}
+
 	h3 {
-		font-size: 28px;
+		font-size: 20px;
 		color: $color_3;
-		padding-top: 20px;
+		padding-top: 15px;
 		padding-bottom: 15px;
 	}
 }
+
 iframe {
 	width: 600px;
 	height: 450px;
 	padding: 10px;
 	margin: auto;
 }
+
 .contacto {
 	margin-top: 30px;
 	display: flex;
@@ -73,10 +81,12 @@ iframe {
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-start;
+
 	iframe {
 		width: 100%;
 	}
 }
+
 .formContacto {
 	display: flex;
 	flex-direction: column;
@@ -85,52 +95,60 @@ iframe {
 	margin: 3px;
 	background-image: url(../img/baner-burbuja.jpg);
 	box-shadow: 7px 7px 30px #000;
+
 	input {
 		padding: 8px;
-		color: $color_4;
+		color: $color_2;
 		margin-top: 15px;
 		margin-left: 10px;
 		margin-right: 15px;
 		border-radius: 5px;
 		background-color: $background-color_2;
 	}
+
 	textarea {
 		padding: 5px;
 		font-family: $font-family_1;
-		color: $color_4;
+		color: $color_2;
 		margin-top: 15px;
 		margin-left: 10px;
 		margin-right: 15px;
 		border-radius: 5px;
 		background-color: $background-color_2;
 	}
+
 	label {
-		color: $color_5;
+		color: $color_3;
 		text-shadow: white -1px 5px 10px;
 	}
+
 	a {
 		text-transform: uppercase;
 		color: $color_3;
 	}
+
 	h5 {
-		color: $color_5;
+		color: $color_3;
 		text-shadow: white -1px 5px 10px;
 	}
+
 	p {
 		color: $color_3;
 		text-shadow: white -1px 5px 10px;
 		font-weight: 600;
 		margin-bottom: 10px;
 	}
+
 	.boton {
 		width: 70%;
 		padding: 8px;
 		margin: auto;
 		background-color: $background-color_3;
-		color: $color_6;
+		color: $color_4;
 		border: none;
 		font-size: 16px;
 		box-shadow: 7px 7px 30px #000;
+
 		&:hover {
 			box-shadow: none;
 		}

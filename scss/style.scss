@@ -3,6 +3,7 @@
 @import "tarjetas";
 @import "footer";
 @import "carrusel";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 .imagenDestacada-productos {
@@ -26,3 +27,48 @@
     background-position: center;
     height: 500px;
 }
+
+
+/* Estilo entradas del blog: general, títulos, parrafo, imágenes, indice*/
+section {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 7px 7px 30px #000;
+    text-align: center;
+    h1{color: $color_2;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 28px;
+    }
+    h2{color: $color_h2_gral;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    }
+    p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+    }
+    img {
+    display: block;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+    }
+}
+ span{
+    p{
+        margin:0;
+    }
+ }
+
+
