@@ -7,9 +7,85 @@
   list-style-type: none;
 }
 
-/* Tarjetas acceso a secciones en Index*/
-/* Mapa */
-/* Formulario de Contacto */
+@media (min-width: 768px) {
+  .imagenDestacada-index {
+    height: 500px;
+  }
+  .imagenDestacada-productos {
+    height: 500px;
+  }
+  .imagenDestacada-nosotros {
+    height: 500px;
+  }
+  .imagenDestacada-blog {
+    height: 500px;
+  }
+  .contacto {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .contacto .formContacto {
+    width: 400px;
+    padding: 15px;
+    margin: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .tarjeta h2 {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  .tarjeta h3 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  /* Mapa */
+  iframe {
+    width: 500px !important;
+    padding: 10px;
+  }
+  /* Formulario de Contacto */
+  .contacto {
+    flex-direction: row !important;
+  }
+  .contacto .formContacto {
+    width: 400px;
+    padding: 15px;
+    margin: 5px;
+  }
+  .contacto .formContacto input {
+    padding: 8px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+  .contacto .formContacto textarea {
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    margin-top: 5px;
+    font-size: 30px;
+    color: rgb(68, 68, 13);
+    padding-top: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+/* Tarjetas en productos.html */
+/* Mapa ubicación y Form contacto en nosotros.html*/
 .seccionTarjetas {
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +116,7 @@
   transform: scale(0.98);
 }
 .tarjeta img {
-  width: 100%;
+  max-width: 300px;
   height: auto;
   color: rgb(14, 51, 9);
   border-radius: 10px;
@@ -56,9 +132,9 @@
   box-shadow: 1px 1px 30px;
 }
 .tarjeta h2 {
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(68, 68, 13);
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .tarjeta h3 {
   font-size: 20px;
@@ -68,29 +144,30 @@
 }
 
 iframe {
-  width: 600px;
+  width: 500px;
   height: 450px;
-  padding: 10px;
+  padding: 5px;
   margin: auto;
 }
 
 .contacto {
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .contacto iframe {
   width: 100%;
 }
 
 .formContacto {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px;
+  padding: 8px;
   margin: 3px;
   background-image: url(../img/baner-burbuja.jpg);
   box-shadow: 7px 7px 30px #000;
@@ -98,20 +175,20 @@ iframe {
 .formContacto input {
   padding: 8px;
   color: rgb(68, 68, 13);
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 15px;
-  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
   background-color: rgba(189, 201, 29, 0.631372549);
 }
 .formContacto textarea {
   padding: 5px;
   font-family: "roboto" sans-serif;
   color: rgb(68, 68, 13);
-  margin-top: 15px;
-  margin-left: 10px;
-  margin-right: 15px;
-  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
   background-color: rgba(189, 201, 29, 0.631372549);
 }
 .formContacto label {
@@ -230,9 +307,12 @@ iframe {
 main {
   background: black url(../img/banner.jpg) no-repeat;
   background-size: cover;
+  height: 100%;
+  padding-bottom: 150px;
   position: relative;
   display: grid;
   grid-template: "carrusel carrusel carrusel" 200px "leyenda . ." auto;
+  background-position: center;
 }
 main .content-all {
   grid-area: carrusel;
@@ -265,14 +345,14 @@ main .my-carousel .caption {
   background-image: url(../img/sabores-originales.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 500px;
+  height: 400px;
 }
 
 .imagenDestacada-nosotros {
   background-image: url(../img/visita-fabrica.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 500px;
+  height: 400px;
 }
 
 .imagenDestacada-blog {
@@ -280,11 +360,18 @@ main .my-carousel .caption {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 400px;
 }
 
 /* Estilo entradas del blog: general, títulos, parrafo, imágenes, indice*/
-section {
+body {
+  overflow-x: hidden;
+}
+body .index {
+  height: 100vh;
+  margin: 0;
+}
+body section {
   margin-top: 5px;
   margin-bottom: 20px;
   margin-left: 15px;
@@ -295,34 +382,33 @@ section {
   box-shadow: 7px 7px 30px #000;
   text-align: center;
 }
-section h1 {
+body section h1 {
   color: rgb(68, 68, 13);
   font-variant: small-caps;
   text-align: center;
   font-size: 28px;
 }
-section h2 {
+body section h2 {
   color: maroon;
   margin-top: 0;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
-section p {
+body section p {
   font-size: 16px;
   line-height: 1.5;
   margin: 30px;
   margin-bottom: 20px;
   text-align: justify;
 }
-section img {
+body section img {
   display: block;
-  max-width: 450px;
+  max-width: 100%;
   height: auto;
   margin: 20px auto;
 }
-
-span p {
+body span p {
   margin: 0;
 }
 

@@ -1,6 +1,6 @@
-/* Tarjetas acceso a secciones en Index*/
-/* Mapa */
-/* Formulario de Contacto */
+/* Tarjetas en productos.html */
+/* Mapa ubicación y Form contacto en nosotros.html*/
+
 .seccionTarjetas {
 	display: flex;
 	flex-wrap: wrap;
@@ -35,7 +35,7 @@
 	}
 
 	img {
-		width: 100%;
+		max-width: 300px;
 		height: auto;
 		color: $color_1;
 		border-radius: 10px;
@@ -54,9 +54,9 @@
 	}
 
 	h2 {
-		font-size: 30px;
+		font-size: 20px;
 		color: $color_2;
-		padding-top: 30px;
+		padding-top: 10px;
 	}
 
 	h3 {
@@ -68,19 +68,19 @@
 }
 
 iframe {
-	width: 600px;
+	width: 500px;
 	height: 450px;
-	padding: 10px;
+	padding: 5px;
 	margin: auto;
 }
 
 .contacto {
-	margin-top: 30px;
+	margin-top: 10px;
 	display: flex;
 	justify-content: space-evenly;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: flex-start;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
 
 	iframe {
 		width: 100%;
@@ -88,10 +88,11 @@ iframe {
 }
 
 .formContacto {
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 15px;
+	padding: 8px;
 	margin: 3px;
 	background-image: url(../img/baner-burbuja.jpg);
 	box-shadow: 7px 7px 30px #000;
@@ -99,10 +100,10 @@ iframe {
 	input {
 		padding: 8px;
 		color: $color_2;
-		margin-top: 15px;
-		margin-left: 10px;
-		margin-right: 15px;
-		border-radius: 5px;
+		margin-top: 10px;
+		margin-left: 8px;
+		margin-right: 10px;
+		border-radius: 4px;
 		background-color: $background-color_2;
 	}
 
@@ -110,10 +111,10 @@ iframe {
 		padding: 5px;
 		font-family: $font-family_1;
 		color: $color_2;
-		margin-top: 15px;
-		margin-left: 10px;
-		margin-right: 15px;
-		border-radius: 5px;
+		margin-top: 10px;
+		margin-left: 8px;
+		margin-right: 10px;
+		border-radius: 4px;
 		background-color: $background-color_2;
 	}
 
