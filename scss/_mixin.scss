@@ -1,0 +1,8 @@
+/* _mixin */
+
+@mixin contactoMixin($pad,$margTLR,$radi){
+    padding: $pad;
+    margin: $margTLR;
+    border-radius: $radi;
+}
+
