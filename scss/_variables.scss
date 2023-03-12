@@ -15,14 +15,5 @@ $font-family_1: 'roboto'sans-serif;
 $background-color_1: rgba(240, 248, 255, 0.4);
 $background-color_2: #bdc91da1;
 $background-color_3: #555a11;
-
-// // variable para la imagen de día
-// $bg-day: url('../img/banner.jpg');
-
-// // variable para la imagen de noche
-// $bg-night: url('../img/fondo-shopp.jpg');
-
-// // Utilizar la función if para seleccionar la imagen correcta según la hora del día
-
-// $now: date();
-// $body-bg: if(hour($now) > 6 and hour($now) < 18, $bg-day, $bg-night);
+$tipo-textoplano: light;
+$alinea-textoplano: justify;

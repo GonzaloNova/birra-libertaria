@@ -1,0 +1,81 @@
+.imagenDestacada-productos {
+    background-image: url(../img/sabores-originales.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+
+.imagenDestacada-nosotros {
+    background-image: url(../img/visita-fabrica.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+
+.imagenDestacada-blog {
+    background-image: url(../img/cerveza-vikinga.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+
+/* Estilo entradas del blog: general, títulos, parrafo, imágenes, indice*/
+body {
+    overflow-x: hidden;
+
+    .index {
+        height: 100vh;
+        margin: 0;
+    }
+
+    section {
+        margin-top: 5px;
+        margin-bottom: 8px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        background-color: $color_4;
+        border-radius: 5px;
+        box-shadow: 7px 7px 30px #000;
+        text-align: center;
+        h1 {
+            color: $color_2;
+            font-variant: small-caps;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bolder;
+        }
+
+        h2 {
+            color: $color_h2_gral;
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 30px;
+            margin-bottom: 20px;
+            text-align: $alinea-textoplano;
+            font-weight: $tipo-textoplano;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+    }
+
+    span {
+        p {
+            margin: 0;
+        }
+    }
+}

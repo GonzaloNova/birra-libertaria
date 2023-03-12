@@ -4,7 +4,19 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-image: url(../img/baner-burbuja.jpg);
+	background: white url(../img/baner-burbuja.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+.seccionTarjetasI {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background: white url(../img/banner-burbuja-oscura.jpg) no-repeat;
+	background-size: cover;
+	height: 100%;
 	padding-bottom: 100px;
 	padding-top: 50px;
 }
@@ -12,7 +24,7 @@
 .tarjeta {
 	width: 450px;
 	margin: 20px;
-	padding: 5px 15px 15px;
+	padding: 20px 15px 15px;
 	text-align: center;
 	background-color: $background-color_1;
 	box-shadow: 5px 10px 10px;
@@ -56,6 +68,7 @@
 		font-size: 20px;
 		color: $color_2;
 		padding-top: 10px;
+		font-weight: bolder;
 	}
 
 	h3 {
