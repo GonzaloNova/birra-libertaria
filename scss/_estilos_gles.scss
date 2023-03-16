@@ -1,23 +1,19 @@
 .imagenDestacada-productos {
-    background-image: url(../img/sabores-originales.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 400px;
+    background: url("../img/sabores-originales.jpg") no-repeat fixed center 70px;
+    background-size: contain;
+    height: 300px;
 }
 
 .imagenDestacada-nosotros {
-    background-image: url(../img/visita-fabrica.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height: 400px;
+    background: url("../img/bg-visita-fabrica.jpg") no-repeat fixed center 70px;
+    background-size: contain;
+    height: 300px;
 }
 
 .imagenDestacada-blog {
-    background-image: url(../img/cerveza-vikinga.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    background: url("../img/bg-cerveza-vikinga.jpg") no-repeat fixed center 70px;
+    background-size: contain;
+    height: 300px;
 }
 
 
@@ -31,10 +27,7 @@ body {
     }
 
     section {
-        margin-top: 5px;
-        margin-bottom: 8px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 5px 5px 8px 5px;
         padding: 10px;
         background-color: $color_4;
         border-radius: 5px;
@@ -50,7 +43,7 @@ body {
 
         h2 {
             color: $color_h2_gral;
-            margin-top: 0;
+            margin-top: 10px;
             font-size: 24px;
             font-weight: bolder;
             text-align: center;
@@ -72,7 +65,8 @@ body {
             margin: 20px auto;
         }
     }
-
+    aside{
+        text-align: center;}
     span {
         p {
             margin: 0;

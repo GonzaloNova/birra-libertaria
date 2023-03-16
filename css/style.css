@@ -10,17 +10,14 @@
 
 /* _medias Q */ /* _mixin */
 @media (min-width: 768px) {
-  .imagenDestacada-index {
-    height: 500px;
+  div.imagenDestacada-productos {
+    height: 400px;
   }
-  .imagenDestacada-productos {
-    height: 500px;
+  div.imagenDestacada-nosotros {
+    height: 400px;
   }
-  .imagenDestacada-nosotros {
-    height: 500px;
-  }
-  .imagenDestacada-blog {
-    height: 500px;
+  div.imagenDestacada-blog {
+    height: 400px;
   }
   .contacto {
     margin-top: 30px;
@@ -353,25 +350,21 @@ main .my-carousel .caption {
 }
 
 .imagenDestacada-productos {
-  background-image: url(../img/sabores-originales.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 400px;
+  background: url("../img/sabores-originales.jpg") no-repeat fixed center 70px;
+  background-size: contain;
+  height: 300px;
 }
 
 .imagenDestacada-nosotros {
-  background-image: url(../img/visita-fabrica.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  height: 400px;
+  background: url("../img/bg-visita-fabrica.jpg") no-repeat fixed center 70px;
+  background-size: contain;
+  height: 300px;
 }
 
 .imagenDestacada-blog {
-  background-image: url(../img/cerveza-vikinga.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
+  background: url("../img/bg-cerveza-vikinga.jpg") no-repeat fixed center 70px;
+  background-size: contain;
+  height: 300px;
 }
 
 /* Estilo entradas del blog: general, títulos, parrafo, imágenes, indice*/
@@ -383,10 +376,7 @@ body .index {
   margin: 0;
 }
 body section {
-  margin-top: 5px;
-  margin-bottom: 8px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 5px 5px 8px 5px;
   padding: 10px;
   background-color: white;
   border-radius: 5px;
@@ -402,7 +392,7 @@ body section h1 {
 }
 body section h2 {
   color: maroon;
-  margin-top: 0;
+  margin-top: 10px;
   font-size: 24px;
   font-weight: bolder;
   text-align: center;
@@ -420,6 +410,9 @@ body section img {
   max-width: 100%;
   height: auto;
   margin: 20px auto;
+}
+body aside {
+  text-align: center;
 }
 body span p {
   margin: 0;
