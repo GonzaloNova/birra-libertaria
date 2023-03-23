@@ -4,3 +4,5 @@ pages/leermas.html
 pages/blog-leermas.html
 index_old.html
 node_modules/
+package-lock.json
+package.json

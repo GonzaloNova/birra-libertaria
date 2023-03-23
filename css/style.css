@@ -34,6 +34,18 @@
   }
 }
 @media (min-width: 1024px) {
+  div.imagenDestacada-productos {
+    background-position: 0;
+    background-size: cover;
+  }
+  div.imagenDestacada-nosotros {
+    background-position: 0;
+    background-size: cover;
+  }
+  div.imagenDestacada-blog {
+    background-position: 0;
+    background-size: cover;
+  }
   .tarjeta h2 {
     font-size: 25px;
     padding-top: 20px;
@@ -77,32 +89,30 @@
   }
 }
 /* _targetas: Tarjetas en productos.html y Mapa ubicación y Form contacto en nosotros.html*/
-body .seccionTarjetas {
+.seccionTarjetas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: white url(../img/baner-burbuja.jpg) no-repeat;
   background-size: cover;
   height: 100%;
-  padding-bottom: 100px;
   padding-top: 50px;
 }
 
-body .seccionTarjetasI {
+.seccionTarjetasI {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: white url(../img/banner-burbuja-oscura.jpg) no-repeat;
   background-size: cover;
   height: 100%;
-  padding-bottom: 180px;
   padding-top: 50px;
 }
 
 .tarjeta {
-  width: 450px;
+  width: 350px;
   margin: 20px;
-  padding: 20px 15px 15px;
+  padding: 10px 10px 10px;
   text-align: center;
   background-color: rgba(240, 248, 255, 0.4);
   box-shadow: 5px 10px 10px;
@@ -111,13 +121,7 @@ body .seccionTarjetasI {
   border-top: rgba(108, 151, 94, 0.2196078431) solid 5px;
   backdrop-filter: blur(5px);
   color: rgb(14, 51, 9);
-}
-.tarjeta a {
   text-decoration-line: none;
-}
-.tarjeta a:hover img {
-  box-shadow: none;
-  transform: scale(0.98);
 }
 .tarjeta img {
   max-width: 300px;
@@ -125,6 +129,11 @@ body .seccionTarjetasI {
   color: rgb(14, 51, 9);
   border-radius: 10px;
   box-shadow: 5px 5px 30px;
+  margin: 25px auto;
+}
+.tarjeta img:hover {
+  box-shadow: none;
+  transform: scale(0.98);
 }
 .tarjeta .iconWp {
   width: 50px;
@@ -376,7 +385,7 @@ body .index {
   margin: 0;
 }
 body section {
-  margin: 5px 5px 8px 5px;
+  margin: 4px 4px 0px 4px;
   padding: 10px;
   background-color: white;
   border-radius: 5px;
@@ -400,7 +409,7 @@ body section h2 {
 body section p {
   font-size: 16px;
   line-height: 1.5;
-  margin: 30px;
+  margin: 20px;
   margin-bottom: 20px;
   text-align: justify;
   font-weight: light;
