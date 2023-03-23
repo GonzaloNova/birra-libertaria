@@ -93,7 +93,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: white url(../img/baner-burbuja.jpg) no-repeat;
+  background: white url(../img/baner-burbuja.webp) no-repeat;
   background-size: cover;
   height: 100%;
   padding-top: 50px;
@@ -103,7 +103,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: white url(../img/banner-burbuja-oscura.jpg) no-repeat;
+  background: white url(../img/banner-burbuja-oscura.webp) no-repeat;
   background-size: cover;
   height: 100%;
   padding-top: 50px;
@@ -183,7 +183,7 @@ iframe {
   justify-content: center;
   padding: 8px;
   margin: 3px;
-  background-image: url(../img/baner-burbuja.jpg);
+  background-image: url(../img/baner-burbuja.webp);
   box-shadow: 7px 7px 30px #000;
 }
 .formContacto input {
@@ -321,7 +321,7 @@ iframe {
 }
 
 main {
-  background: black url(../img/banner.jpg) no-repeat;
+  background: black url(../img/banner.webp) no-repeat;
   background-size: cover;
   height: 100%;
   padding-bottom: 150px;
@@ -359,19 +359,19 @@ main .my-carousel .caption {
 }
 
 .imagenDestacada-productos {
-  background: url("../img/sabores-originales.jpg") no-repeat fixed center 70px;
+  background: url("../img/sabores-originales.webp") no-repeat fixed center 70px;
   background-size: contain;
   height: 300px;
 }
 
 .imagenDestacada-nosotros {
-  background: url("../img/bg-visita-fabrica.jpg") no-repeat fixed center 70px;
+  background: url("../img/bg-visita-fabrica.webp") no-repeat fixed center 70px;
   background-size: contain;
   height: 300px;
 }
 
 .imagenDestacada-blog {
-  background: url("../img/bg-cerveza-vikinga.jpg") no-repeat fixed center 70px;
+  background: url("../img/bg-cerveza-vikinga.webp") no-repeat fixed center 70px;
   background-size: contain;
   height: 300px;
 }
